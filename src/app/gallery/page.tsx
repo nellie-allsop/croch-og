@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: "Gallery",
@@ -20,17 +19,17 @@ type projectsType = {
 
 let projects: projectsType[] = [
 	{
-		name: "Carnivorous plant",
+		name: "Plant",
 		year: 2022,
 		id: 0,
 	},
 	{
-		name: "Baby blanket",
+		name: "Blanket",
 		year: 2022,
 		id: 1,
 	},
 	{
-		name: "Bonnets",
+		name: "Bonnet",
 		year: 2020,
 		id: 2,
 	},
@@ -61,7 +60,7 @@ export default function Gallery({
 
 	return (
 		<>
-			<h1>My patterns projects</h1>
+			<h1>My past projects</h1>
 			<p>Filter by year created</p>
 			<Link href="/gallery">Clear filter</Link>
 			<Link href="/gallery?sortBy=asc">Oldest first</Link>

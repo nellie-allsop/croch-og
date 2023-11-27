@@ -14,6 +14,10 @@ export default function Levels() {
 		<>
 			<h1>Patterns</h1>
 			<p>Find some fun patterns below</p>
+			<Link href={"/patterns/levels/"}>
+							Choose your pattern by proficiency level
+						</Link>
+			{/* <Levels /> */}
 			{posts.map(post => {return (
 				<p key={post.id}><Link href={`/patterns/${post.slug}`}>{post.title}</Link>
 			</p>
